@@ -10,3 +10,7 @@ public class HomeController {
         return "index.html"; // return name of view to return in browser
     }
 }
+
+// To run the application You can click on run sign
+// OR
+// you can go to project folder and write ./mvnw spring-boot:run
