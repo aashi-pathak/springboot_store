@@ -7,7 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
     @RequestMapping("/")//this method is called when this given endpoint is triggered
     public String index() {
-        return "index.html"; // return name of view to return in browser
+        String viewName = getViewName(); // insert a breakpoint here, there is no file named "index"
+                                         // press debug button
+                                         // press step-over 2 times, you will get sourcecode of springframework ( decompiled class )
+                                         // press step-into to get into a function
+        return viewName; // return name of view to return in browser
+    }
+
+    private String getViewName() {
+        return "index";
     }
 }
 
