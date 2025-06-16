@@ -40,6 +40,15 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional> <!-- true means its only used during development and not deployed in application -->
+        </dependency>
+        <!-- after adding this dependency check build project automatically and allow auto-make to start.. from settings -->
+
+
         <!-- press command and n for adding dependencies from intellIJ -->
         <!-- Don't add versions and let springboot handle versions -->
         <dependency>
